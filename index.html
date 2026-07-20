@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agencia Criativa Web</title>
+    <!-- Link para o CSS Externo -->
+    <link rel="stylesheet" href="estilos.css">
+    <!-- Fonte Google Fonts para dar um visual moderno -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Cabeçalho com Logo e Navegação (Flexbox) -->
+    <header class="cabecalho">
+        <div class="container header-container">
+            <a href="#" class="logo">Pixel<span>Craft</span></a>
+            
+            <!-- Checkbox invisível para controlar o menu hambúrguer via CSS -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Alternarn menu de navegação">
+            <label for="menu-toggle" class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <nav class="navegacao">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#sobre">Sobre Nós</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#depoimentos">Depoimentos</a></li>
+                    <li><a href="#contato" class="btn-nav">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção 1: Home (Banner Principal) -->
+    <section id="home" class="hero">
+        <div class="container hero-container">
+            <div class="hero-conteudo">
+                <h1>Transformamos ideias em <span class="destaque">experiências digitais</span> de alto impacto.</h1>
+                <p>Criamos designs memoráveis, branding autêntico e soluções web sob medida para destacar seu negócio no mercado.</p>
+                <a href="#servicos" class="btn-principal">Conhecer Serviços</a>
+            </div>
+            <div class="hero-imagem">
+                <!-- Imagem Responsiva usando srcset para otimização de tamanho -->
+                <img src="https://picsum.photos/600/400" 
+                     srcset="https://picsum.photos/400/300 400w, 
+                             https://picsum.photos/600/400 600w, 
+                             https://picsum.photos/800/600 800w" 
+                     sizes="(max-width: 768px) 100vw, 50vw" 
+                     alt="Ilustração de design de interface digital" 
+                     class="img-responsiva">
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção 2: Sobre Nós -->
+    <section id="sobre" class="sobre">
+        <div class="container sobre-container">
+            <div class="sobre-conteudo">
+                <h2>Quem Somos</h2>
+                <p>Nascemos com a missão de traduzir a essência das marcas para o mundo digital. Acreditamos que um design funcional alinhado a uma tecnologia robusta é a chave para o sucesso de qualquer negócio.</p>
+                
+                <div class="valores">
+                    <div class="valor-item">
+                        <strong>Criatividade</strong>
+                        <p>Pensar fora da caixa é o nosso ponto de partida.</p>
+                    </div>
+                    <div class="valor-item">
+                        <strong>Inovação</strong>
+                        <p>Tecnologias de ponta para resultados escaláveis.</p>
+                    </div>
+                    <div class="valor-item">
+                        <strong>Impacto</strong>
+                        <p>Foco total em gerar valor para nossos clientes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção 3: Serviços (Utilizando CSS Grid) -->
+    <section id="servicos" class="servicos">
+        <div class="container">
+            <div class="secao-titulo">
+                <h2>Nossos Serviços</h2>
+                <p>Soluções criativas completas para o seu ecossistema digital</p>
+            </div>
+            
+            <div class="servicos-grid">
+                <div class="servico-card">
+                    <div class="servico-icone">🎨</div>
+                    <h3>Branding & Identidade</h3>
+                    <p>Logotipos, paletas de cores e guias de estilo que traduzem perfeitamente o propósito da sua marca.</p>
+                </div>
+                <div class="servico-card">
+                    <div class="servico-icone">💻</div>
+                    <h3>Desenvolvimento Web</h3>
+                    <p>Sites institucionais, e-commerces e web apps modernos, rápidos, responsivos e otimizados para o SEO.</p>
+                </div>
+                <div class="servico-card">
+                    <div class="servico-icone">📐</div>
+                    <h3>Design de Interface UI/UX</h3>
+                    <p>Prototipagem de aplicativos e sistemas com foco na usabilidade e na jornada intuitiva do usuário.</p>
+                </div>
+                <div class="servico-card">
+                    <div class="servico-icone">🚀</div>
+                    <h3>Marketing Digital</h3>
+                    <p>Planejamento de campanhas digitais e gestão de redes sociais focados em conversão e crescimento real.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção 4: Depoimentos (Flexbox / Grid) -->
+    <section id="depoimentos" class="depoimentos">
+        <div class="container">
+            <div class="secao-titulo">
+                <h2>O que dizem nossos clientes</h2>
+                <p>A nossa maior conquista é o sucesso dos nossos parceiros.</p>
+            </div>
+            
+            <div class="depoimentos-container">
+                <div class="depoimento-card">
+                    <p class="comentario">"A PixelCraft superou todas as nossas expectativas. O novo site triplicou nossos contatos de novos clientes logo no primeiro mês."</p>
+                    <div class="cliente-info">
+                        <strong>Mariana Costa</strong>
+                        <span>Diretora da TechVibe</span>
+                    </div>
+                </div>
+                <div class="depoimento-card">
+                    <p class="comentario">"A reformulação da nossa identidade visual trouxe o ar profissional que nossa startup precisava para atrair novos investidores."</p>
+                    <div class="cliente-info">
+                        <strong>Carlos Eduardo</strong>
+                        <span>Fundador do AppFácil</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção 5: Contato (Formulário e Informações) -->
+    <section id="contato" class="contato">
+        <div class="container contato-container">
+            <div class="contato-info">
+                <h2>Vamos tirar sua ideia do papel?</h2>
+                <p>Entre em contato conosco e receba uma proposta personalizada para impulsionar seu projeto digital.</p>
+                
+                <ul class="contato-lista">
+                    <li>📍 <strong>Endereço:</strong> Av. Paulista, 1000 - São Paulo, SP</li>
+                    <li>📞 <strong>Telefone:</strong> (11) 98765-4321</li>
+                    <li>✉️ <strong>E-mail:</strong> contato@pixelcraft.com</li>
+                </ul>
+            </div>
+            
+            <div class="contato-formulario">
+                <form action="#" method="POST">
+                    <div class="campo">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+                    </div>
+                    
+                    <div class="campo">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+                    </div>
+                    
+                    <div class="campo">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Como podemos te ajudar?" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn-principal btn-formulario">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="rodape">
+        <div class="container">
+            <p>&copy; 2026 PixelCraft. Todos os direitos reservados. Desenvolvido para fins educacionais.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
