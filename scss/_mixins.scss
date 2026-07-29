@@ -1,0 +1,38 @@
+@use 'variables' as v;
+
+// Mixin 1: Flexbox Centralizado / Alinhado
+@mixin flex-center($direction: row, $justify: center, $align: center) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+// Mixin 2: Estilização Base de Botões
+@mixin button-base($bg-color, $text-color: v.$color-white) {
+  display: inline-block;
+  padding: (v.$base-spacing * 0.4) (v.$base-spacing * 0.9); // Uso de Operador
+  background-color: $bg-color;
+  color: $text-color;
+  border-radius: 5px;
+  font-weight: 600;
+  font-family: v.$font-heading;
+  transition: v.$transition-default;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+
+  &:hover {
+    background-color: darke-color($bg-color); // Tratado via hover específico
+    transform: translateY(-2px);
+  }
+}
+
+// Mixin 3: Media Queries Responsivas
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == tablet {
+    @media (max-width: 992px) { @content; }
+  } @else if $breakpoint == mobile {
+    @media (max-width: 768px) { @content; }
+  }
+}

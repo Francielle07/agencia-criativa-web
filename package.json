@@ -1,0 +1,36 @@
+{
+  "name": "agencia-criativa-web",
+  "version": "1.0.0",
+  "scripts": {
+    "build:sass": "sass scss/estilos.scss css/estilos.css --style=compressed",
+    "watch:sass": "sass --watch scss/estilos.scss css/estilos.css"
+  },
+  "devDependencies": {
+    "sass": "^1.102.0"
+  },
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Francielle07/agencia-criativa-web.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Francielle07/agencia-criativa-web/issues"
+  },
+  "homepage": "https://github.com/Francielle07/agencia-criativa-web#readme",
+  "dependencies": {
+    "chokidar": "^5.0.0",
+    "detect-libc": "^2.1.2",
+    "immutable": "^5.1.9",
+    "is-extglob": "^2.1.1",
+    "is-glob": "^4.0.3",
+    "node-addon-api": "^7.1.1",
+    "picomatch": "^4.0.5",
+    "readdirp": "^5.0.0",
+    "source-map-js": "^1.2.1"
+  }
+}
